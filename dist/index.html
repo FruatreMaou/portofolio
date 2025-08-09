@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fruatre Maou - Portfolio developer pemula dengan 1 tahun pengalaman. Spesialisasi Node.js, JavaScript, HTML/CSS, Python, dan WhatsApp Bot. Lihat project dan perjalanan belajar programming saya.">
+    <meta name="keywords" content="Fruatre Maou, developer, portfolio, Node.js, JavaScript, HTML, CSS, Python, WhatsApp Bot, web development, programming, Indonesia">
+    <meta name="author" content="Fruatre Maou">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Indonesian">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Fruatre Maou - Developer & Creator Portfolio">
+    <meta property="og:description" content="Portfolio developer pemula dengan 1 tahun pengalaman. Spesialisasi Node.js, JavaScript, HTML/CSS, Python, dan WhatsApp Bot.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fruatremaou.github.io">
+    <meta property="og:image" content="https://fruatremaou.github.io/static/profile.jpg">
+    <meta property="og:site_name" content="Fruatre Maou Portfolio">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fruatre Maou - Developer & Creator Portfolio">
+    <meta name="twitter:description" content="Portfolio developer pemula dengan 1 tahun pengalaman. Spesialisasi Node.js, JavaScript, HTML/CSS, Python, dan WhatsApp Bot.">
+    <meta name="twitter:image" content="https://fruatremaou.github.io/static/profile.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fruatremaou.github.io">
+    
+    <title>Fruatre Maou - Developer & Creator Portfolio | Node.js, JavaScript, WhatsApp Bot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="dist/styles.css">
+    
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Fruatre Maou",
+        "jobTitle": "Web Developer",
+        "description": "Developer pemula dengan 1 tahun pengalaman dalam Node.js, JavaScript, HTML/CSS, Python, dan WhatsApp Bot",
+        "url": "https://fruatremaou.github.io",
+        "sameAs": [
+            "https://github.com/FruatreMaou",
+            "https://instagram.com/miesedap_7"
+        ],
+        "knowsAbout": [
+            "Node.js",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Python",
+            "WhatsApp Bot Development",
+            "Web Development",
+            "API Development"
+        ],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelancer"
+        }
+    }
+    </script>
+    
+    <style>
+        /* Tambahkan gaya untuk background alternatif */
+        .hero-section {
+            background: linear-gradient(135deg, #4A90E2 0%, #9B59B6 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Efek visual alternatif */
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('static/profile.jpg') center/cover no-repeat;
+            opacity: 0.1;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#home" class="logo" aria-label="Fruatre Maou - Home">Fruatre Maou</a>
+        <button id="menu-btn" class="menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+            <span class="menu-icon">☰</span>
+        </button>
+        <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+            <button id="close-btn" class="close-btn" aria-label="Close navigation menu">×</button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hello-bar card" aria-live="polite">👋 <span id="dynamic-greeting"></span></div>
+                <h1>I'M <span class="highlight">FRUATRE MAOU,</span><br>DEVELOPER & CREATOR</h1>
+                <p>悪魔の王の夢 - Dream of the Demon King. A passionate developer who loves creating innovative solutions with code, AI, and creativity.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary card">View My Work <span aria-hidden="true">→</span></a>
+                    <a href="#contact" class="btn btn-secondary card">Contact Me</a>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="static/profile.jpg" alt="Portrait of Fruatre Maou" class="hero-image card" width="300" height="300">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-header">
+                <a href="#about" class="btn-like-title card section-heading" style="color: white;">About Me</a>
+                <h2>MY STORY</h2>
+            </div>
+            <div class="about-content-card">
+                <div class="about-image-container">
+                    <img src="static/profile.jpg" alt="Fruatre Maou portrait" class="about-image card" width="300" height="300">
+                    <div class="deco-circle" aria-hidden="true"></div>
+                </div>
+                <p>Hello! I'm Fruatre Maou, a passionate beginner developer and creator. Meskipun baru 1 tahun belajar programming, saya sangat antusias dalam menggabungkan skill coding tradisional dengan teknologi AI modern. Saya fokus pada pengembangan aplikasi web, bot WhatsApp, dan solusi kreatif lainnya. Saya percaya bahwa dengan semangat belajar yang tinggi, teknologi dapat mengubah ide menjadi kenyataan.
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-icon" aria-hidden="true">1+</div>
+                        <p>Years Experience<br><span class="stat-detail">In Web Development</span></p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon" aria-hidden="true">10+</div>
+                        <p>Projects Completed<br><span class="stat-detail">Learning Journey</span></p>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-dark card">Hubungi Saya</a>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section id="journey" class="journey-section">
+            <div class="section-header">
+                <a href="#journey" class="btn-like-title card section-heading" style="color: white;">My Journey</a>
+                <h2>PERJALANAN BELAJAR</h2>
+            </div>
+            <div class="journey-content-card">
+                <p style="color: white;">Dari nol hingga sekarang, ini adalah perjalanan saya dalam dunia programming yang penuh dengan pembelajaran dan tantangan.</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item card">
+                        <div class="timeline-date">2024 - Awal</div>
+                        <div class="timeline-content">
+                            <h3>🚀 Memulai Journey Programming</h3>
+                            <p>Pertama kali mengenal HTML dan CSS. Membuat website sederhana pertama kali dan jatuh cinta dengan coding.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item card">
+                        <div class="timeline-date">2024 - Q2</div>
+                        <div class="timeline-content">
+                            <h3>💻 Belajar JavaScript & Node.js</h3>
+                            <p>Mulai memahami logika programming dengan JavaScript dan eksplorasi backend dengan Node.js. Membuat project pertama yang interaktif.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item card">
+                        <div class="timeline-date">2024 - Q3</div>
+                        <div class="timeline-content">
+                            <h3>🤖 Eksplorasi WhatsApp Bot</h3>
+                            <p>Tertarik dengan automation dan mulai belajar membuat WhatsApp Bot. Berhasil membuat bot pertama dengan fitur dasar.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item card">
+                        <div class="timeline-date">2024 - Q4</div>
+                        <div class="timeline-content">
+                            <h3>🌐 Mengembangkan Web Applications</h3>
+                            <p>Mulai membuat aplikasi web yang lebih kompleks seperti API Server, Weather App, dan YouTube Downloader.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item card">
+                        <div class="timeline-date">2025 - Sekarang</div>
+                        <div class="timeline-content">
+                            <h3>🎯 Fokus pada Portfolio & Growth</h3>
+                            <p>Membangun portfolio yang solid, memperdalam skill yang ada, dan terus belajar teknologi baru. Target: menjadi full-stack developer yang handal!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="journey-stats">
+                    <div class="journey-stat-item card">
+                        <div class="journey-stat-number">365+</div>
+                        <div class="journey-stat-label">Hari Belajar</div>
+                    </div>
+                    <div class="journey-stat-item card">
+                        <div class="journey-stat-number">10+</div>
+                        <div class="journey-stat-label">Project Selesai</div>
+                    </div>
+                    <div class="journey-stat-item card">
+                        <div class="journey-stat-number">5+</div>
+                        <div class="journey-stat-label">Teknologi Dikuasai</div>
+                    </div>
+                </div>
+                
+                <!-- Islamic Quotes Section -->
+                <div class="islamic-quotes-section">
+                    <h3 style="color: white;">💫 Inspirasi & Motivasi</h3>
+                    <p class="quotes-intro">Dalam perjalanan belajar ini, saya selalu terinspirasi oleh hikmah dan nasihat dari Rasulullah ﷺ dan para sahabatnya yang mulia.</p>
+                    
+                    <div class="quotes-container">
+                        <div class="quote-card card">
+                            <div class="quote-text">
+                                <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
+                                <p>"Barangsiapa yang menempuh jalan untuk mencari ilmu, maka Allah akan memudahkan baginya jalan menuju surga."</p>
+                                <i class="fa-solid fa-quote-right quote-icon" aria-hidden="true"></i>
+                            </div>
+                            <div class="quote-author">— Rasulullah ﷺ (HR. Muslim)</div>
+                        </div>
+                        
+                        <div class="quote-card card">
+                            <div class="quote-text">
+                                <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
+                                <p>"Orang yang kuat bukanlah yang dapat mengalahkan orang lain, tetapi orang yang dapat mengendalikan dirinya ketika marah."</p>
+                                <i class="fa-solid fa-quote-right quote-icon" aria-hidden="true"></i>
+                            </div>
+                            <div class="quote-author">— Rasulullah ﷺ (HR. Bukhari & Muslim)</div>
+                        </div>
+                        
+                        <div class="quote-card card">
+                            <div class="quote-text">
+                                <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
+                                <p>"Sesungguhnya bersama kesulitan ada kemudahan."</p>
+                                <i class="fa-solid fa-quote-right quote-icon" aria-hidden="true"></i>
+                            </div>
+                            <div class="quote-author">— Al-Qur'an (94:6)</div>
+                        </div>
+                        
+                        <div class="quote-card card">
+                            <div class="quote-text">
+                                <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
+                                <p>"Sebaik-baik manusia adalah yang paling bermanfaat bagi manusia lain."</p>
+                                <i class="fa-solid fa-quote-right quote-icon" aria-hidden="true"></i>
+                            </div>
+                            <div class="quote-author">— Rasulullah ﷺ (HR. Ahmad & Thabrani)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-header">
+                <a href="#skills" class="btn-like-title card section-heading" style="color: white;">My Skills</a>
+                <h2 style="color: white;">TECHNICAL EXPERTISE</h2>
+            </div>
+            <div class="skills-content-card">
+                <p>I work with a diverse range of technologies and tools to create modern, efficient, and innovative solutions.</p>
+                <h3>Technologies & Tools</h3>
+                <div class="skills-grid" role="list">
+                    <div class="skill-item card skill-item-nodejs" role="listitem">
+                        <img src="static/skills/nodejs.png" alt="Node.js" class="skill-icon">
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-item card skill-item-javascript" role="listitem">
+                        <img src="static/skills/javascript.png" alt="JavaScript" class="skill-icon">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item card skill-item-html-css" role="listitem">
+                        <img src="static/skills/html-css.png" alt="HTML/CSS" class="skill-icon">
+                        <span>HTML/CSS</span>
+                    </div>
+                    <div class="skill-item card skill-item-python" role="listitem">
+                        <img src="static/skills/python.png" alt="Python" class="skill-icon">
+                        <span>Python (Basic)</span>
+                    </div>
+                    <div class="skill-item card skill-item-whatsapp" role="listitem">
+                        <img src="static/skills/whatsapp-bot.jpg" alt="WhatsApp Bot" class="skill-icon">
+                        <span>WhatsApp Bot</span>
+                    </div>
+                    <div class="skill-item card skill-item-git" role="listitem">
+                        <img src="static/skills/git.png" alt="Git" class="skill-icon">
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-item card skill-item-api" role="listitem">
+                        <img src="static/skills/api-development.png" alt="API Development" class="skill-icon">
+                        <span>API Development</span>
+                    </div>
+                    <div class="skill-item card skill-item-design" role="listitem">
+                        <img src="static/skills/web-design.png" alt="Web Design" class="skill-icon">
+                        <span>Web Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <h2 class="section-heading">FEATURED WORK</h2>
+            </div>
+            <div class="project-grid" id="project-links" role="list">
+                <!-- Projects will be loaded dynamically -->
+                <div class="loading" role="alert">Loading projects...</div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <a href="#contact" class="btn-like-title card section-heading" style="color: white;">Get In Touch</a>
+                <h2>LET'S WORK TOGETHER</h2>
+            </div>
+            <p>Have a project in mind? I'd love to hear about it. Send me a message and let's create something amazing together.</p>
+            
+            <div class="contact-info-list" role="list">
+                <div class="contact-info-item" role="listitem">
+                    <div class="contact-icon icon-phone"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+                    <div><h3>WhatsApp</h3><p>+62 858-1759-7752</p></div>
+                </div>
+                <div class="contact-info-item" role="listitem">
+                    <div class="contact-icon icon-email"><i class="fa-brands fa-instagram" aria-hidden="true"></i></div>
+                    <div><h3>Instagram</h3><p>@miesedap_7</p></div>
+                </div>
+                <div class="contact-info-item" role="listitem">
+                    <div class="contact-icon icon-location"><i class="fa-brands fa-github" aria-hidden="true"></i></div>
+                    <div><h3>GitHub</h3><p>FruatreMaou</p></div>
+                </div>
+            </div>
+
+            <div class="contact-social-links">
+                <a href="https://wa.me/6285817597752" class="social-icon-contact" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="https://instagram.com/miesedap_7" class="social-icon-contact" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/FruatreMaou" class="social-icon-contact" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://whatsapp.com/channel/0029VaNR2B6BadmioY6mar3N" class="social-icon-contact" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Channel">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="https://chat.whatsapp.com/EZ9BBEblrJ92Cm8u8gDiHQ" class="social-icon-contact" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Group">
+                    <i class="fa-solid fa-users" aria-hidden="true"></i>
+                </a>
+            </div>
+    <script src="dist/main.js"></script>
+</body>
+</html>
