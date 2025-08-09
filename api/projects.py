@@ -1,6 +1,6 @@
 import json
 from http.server import BaseHTTPRequestHandler
-from main import get_projects  # fungsi ini harus ada di main.py kamu
+from src.main import get_projects
 
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
